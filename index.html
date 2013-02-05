@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mustached bear</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="author" content="The Chopping Block, Inc." />
+	<meta name="geo.country" content="US" />
+	<meta name="dc.language" content="en" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<style type="text/css" media="screen">		
+		/*local styles if any (quick tests and local only overrides)*/
+	</style>
+</head>
+<body>
+
+	<<div class="wrap" >
+		Project: Javascript Week 1 Homework<br>
+		Noun: <input type="text" name="noun" value="" id="noun"><br>
+		Adjective: <input type="text" name="adjective" value="" id="adjective"><br>
+		Verb: <input type="text" name="verb" value="" id="verb"><br>
+		<button id="submit">Submit</button>
+		<p id="result">
+			
+			
+		</p>
+		
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		
+		var noun_sentence_1 = "Lets throw a "; //noun will here
+		var noun_sentence_2 = ".";
+		
+		var adjective_sentence_1 = " Lets throw a "; //noun will here
+		var adjective_sentence_2 = ".";
+		
+		var verb_sentence_1 = " Lets throw a "; //noun will here
+		var verb_sentence_2 = ".";
+						
+		var button = document.getElementById("submit");
+		button.onclick = function(){
+			//Getting the values from the fields on the page
+			var noun = document.getElementById('noun').value;
+			var adjective = document.getElementById('adjective').value;
+			var verb = document.getElementById("verb").value;
+			
+			//Putting all the sentences together to make our story
+			var story = noun_sentence_1 + noun + noun_sentence_2 + adjective_sentence_1 + adjective + adjective_sentence_2 + verb_sentence_1 + verb + verb_sentence_2;
+			
+			//Displaying the story on the page
+			document.getElementById("result").innerHTML = story;
+		}
+		
+	</script>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
